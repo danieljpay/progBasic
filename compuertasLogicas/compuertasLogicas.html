@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tablas de verdad y compuertas lógicas</title>
+  </head>
+  <style media="screen">
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #00ff00 ;
+      border-style: solid;
+    }
+    .logoHeader {
+      margin: 0px 0px 0px 0px;
+      width: 250px;
+      height: 150px;
+    }
+    div {
+      margin-left: 450px;
+    }
+    h1{
+      font-family:inherit;
+      margin-left: -50px;
+    }
+    h2 {
+      margin-left: 60px;
+    }
+    p {
+      margin-left: 100px;
+      font-family: sans-serif;
+    }
+    a {
+      margin-left: 100px;
+    }
+    input {
+      margin-left: 100px;
+      opacity: 0.8;
+    }
+    .sinmargen {
+      margin-left: 0px;
+    }
+    .button {
+      margin-left: 35px;
+      width: 100px;
+      height: 35px;
+      border-radius: 15px;
+      border-style: outset;
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <header>
+      <img class = "logoHeader" src="https://www.banksecrets.eu/wp-content/uploads/2020/03/banamex-820x470.png" alt="logo Banamex" />
+    </header>
+    <div>
+    <h1>Bienvenido al sistema de tranferencia</h1>
+    <h2>Datos del solicitante<hr /></h2>
+    <p>Ingresa el nombre de tu banco:</p>
+    <input type="text" id="bancoCliente" value="Bancomer" />
+    <p>Ingresa tu cuenta: </p>
+    <input type="text" id="cuentaCliente" value="7928 4984 13746" />
+    <p>Ingresa tu saldo: </p>
+    <a>$ </a>
+    <input class="sinmargen" type="text" id="saldoCliente" value="5000" />
+    <h2>Datos del destino<hr /></h2>
+    <p>Ingresa el banco destino: </p>
+    <input type="text" id="bancoDestino" value="Bancomer" />
+    <p>Ingresa el cuenta destino: </p>
+    <input type="text" id="cuentaDestino" value="8467 2547 1236" />
+    <p>
+      <input class="button" id="botonTransferir" type="button" value="Transferir">
+    </p>
+  </div>
+    <script src="banco.js">
+    </script>
+  </body>
+</html>
